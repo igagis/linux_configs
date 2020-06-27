@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#xkblayout-state print %s
+# NOTE: this script needs this utility:
+#       https://github.com/nonpop/xkblayout-state
 
 LG=$(xkblayout-state print "%s" | tr -d '\n\r')
 IFS=',' read -ra LAYOUT <<< $(setxkbmap -query | awk '/layout/{print $2}')
