@@ -182,3 +182,7 @@ bindsym $mod+l exec "i3lock -c 000000"
 focus_follows_mouse no
 
 bindsym $mod+c exec gsimplecal
+
+# start network manager applet
+exec --no-startup-id nm-applet
+
