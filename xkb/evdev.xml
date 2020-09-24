@@ -1,0 +1,18 @@
+    <layout>
+		<configItem>
+			<name>igagis</name>
+			<shortDescription>en</shortDescription>
+			<description>English (US, igagis)</description>
+			<languageList>
+					<iso639Id>eng</iso639Id>
+				</languageList>
+		</configItem>
+		<variantList>
+			<variant>
+						<configItem>
+								<name>igagis</name>
+								<description>English (US, igagis)</description>
+						</configItem>
+			</variant>
+		</variantList>
+    </layout>
