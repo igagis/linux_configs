@@ -1,2 +1,1 @@
-# i3_scripts
-My scripts for i3 window manager
+= My different linux system config files
