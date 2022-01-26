@@ -3,6 +3,8 @@ xkb_symbols "basic" {
 
     name[Group1]= "English (US, igagis)";
 
+    include "eurosign(5)"
+
     key <TLDE> {	[     grave,	asciitilde	]	};
     key <AE01> {	[	  1,	exclam 		]	};
     key <AE02> {	[	  2,	at		]	};
@@ -19,7 +21,7 @@ xkb_symbols "basic" {
 
     key <AD01> {	[	  q,	Q 		]	};
     key <AD02> {	[	  w,	W		]	};
-    key <AD03> {	[	  e,	E		]	};
+    key <AD03> {	[	  e,	E, EuroSign, EuroSign ]	};
     key <AD04> {	[	  r,	R		]	};
     key <AD05> {	[	  t,	T		]	};
     key <AD06> {	[	  y,	Y		]	};
