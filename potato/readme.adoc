@@ -1,0 +1,22 @@
+= Setup LePotato board from Libre Computer
+
+== autologin
+
+create file `/etc/systemd/system/getty@tty1.service.d/autlogin.conf` with contents:
+
+....
+[Service]
+ExecStart=
+ExecStart=-/sbin/agetty --autologin ivan --noclear %I $TERM
+....
+
+reboot
+
+== launch weston on boot
+To launch weston, add following lines to end of `~/.profile`:
+
+....
+# If running from tty1 start weston
+[ "$(tty)" = "/dev/tty1" ] && exec weston
+....
+
